@@ -1,0 +1,36 @@
+{
+  "name": "oop-fp-course",
+  "version": "1.0.0",
+  "description": "Курс 'Объектно-ориентированное и функциональное программирование' для группы 203",
+  "main": "index.js",
+  "scripts": {
+    "build": "./scripts/build-presentations.sh",
+    "build:pdf": "marp lectures/**/*.md labs/**/*.md --pdf --output output/pdf/",
+    "build:html": "marp lectures/**/*.md labs/**/*.md --html --output output/html/",
+    "serve": "marp lectures/**/*.md labs/**/*.md --server",
+    "install:marp": "npm install -g @marp-team/marp-cli"
+  },
+  "keywords": [
+    "education",
+    "programming",
+    "java",
+    "haskell",
+    "oop",
+    "functional-programming",
+    "game-development"
+  ],
+  "author": "[Ваше имя]",
+  "license": "MIT",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "[URL вашего репозитория]"
+  },
+  "homepage": "[URL вашего курса]"
+}
